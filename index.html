@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Zaytoun — A Table Built for Sharing</title>
+<meta name="description" content="Zaytoun is a modern Lebanese mezze restaurant serving small shared plates made the day they're served." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="wrap">
+      <a href="#top" class="logo">Zaytoun</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#story">Story</a></li>
+        <li><a href="#visit">Hours &amp; Location</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a class="btn btn-primary" href="#reserve">Reserve a table</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <h1>A table built for sharing.</h1>
+          <p class="hero-lede">
+            Zaytoun serves mezze the way it's meant to be eaten — many small plates, passed around,
+            until the table is too full to add another.
+          </p>
+          <div class="hero-actions">
+            <a href="#reserve" class="btn btn-primary">Reserve a table</a>
+            <a href="#menu" class="btn">View the menu</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="pattern-strip"></div>
+          <svg viewBox="0 0 360 320" class="table-illustration">
+            <!-- small plate -->
+            <circle cx="90" cy="90" r="46" class="ill-plate" />
+            <circle cx="90" cy="90" r="30" class="ill-plate-inner" />
+            <!-- lemon slice -->
+            <circle cx="250" cy="70" r="30" class="ill-lemon" />
+            <line x1="250" y1="46" x2="250" y2="94" class="ill-lemon-line" />
+            <line x1="228" y1="70" x2="272" y2="70" class="ill-lemon-line" />
+            <line x1="234" y1="52" x2="266" y2="88" class="ill-lemon-line" />
+            <line x1="266" y1="52" x2="234" y2="88" class="ill-lemon-line" />
+            <!-- pomegranate half -->
+            <circle cx="300" cy="230" r="34" class="ill-pom" />
+            <circle cx="292" cy="222" r="3.5" class="ill-seed" />
+            <circle cx="304" cy="220" r="3.5" class="ill-seed" />
+            <circle cx="298" cy="232" r="3.5" class="ill-seed" />
+            <circle cx="310" cy="234" r="3.5" class="ill-seed" />
+            <circle cx="288" cy="238" r="3.5" class="ill-seed" />
+            <circle cx="306" cy="244" r="3.5" class="ill-seed" />
+            <!-- olive branch -->
+            <path d="M40,230 C90,210 140,240 190,215" class="ill-branch" />
+            <ellipse cx="70" cy="222" rx="10" ry="6" class="ill-leaf" transform="rotate(-20 70 222)"/>
+            <ellipse cx="110" cy="228" rx="10" ry="6" class="ill-leaf" transform="rotate(10 110 228)"/>
+            <ellipse cx="150" cy="220" rx="10" ry="6" class="ill-leaf" transform="rotate(-15 150 220)"/>
+            <circle cx="95" cy="235" r="7" class="ill-olive" />
+            <circle cx="135" cy="238" r="7" class="ill-olive" />
+            <!-- drizzle: the one animated moment -->
+            <path d="M180,20 C185,55 130,60 140,95 C148,120 200,120 190,150"
+                  class="ill-drizzle" />
+          </svg>
+          <p class="visual-caption">Olive oil, finished at the table.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= STORY ================= -->
+    <section class="story" id="story">
+      <div class="wrap story-grid">
+        <div>
+          <span class="kicker">Our story</span>
+          <h2>Started on a rooftop, for twelve friends.</h2>
+          <p>
+            Zaytoun began as a rooftop dinner for twelve people and grew into a restaurant without
+            changing how it cooks. Every mezze plate is still made the same day it's served, using
+            recipes carried through three home kitchens before ours.
+          </p>
+          <p>
+            Nothing on the table arrives alone. Plates are meant to be passed, portions are meant to
+            be shared, and the meal is meant to run long.
+          </p>
+        </div>
+        <blockquote class="pull-card">
+          <span class="quote-mark">&ldquo;</span>
+          <p>Good mezze isn't rushed.<br>Neither is a good meal.</p>
+          <cite>— from the kitchen</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <div class="pattern-divider"></div>
+
+    <!-- ================= MENU ================= -->
+    <section class="menu" id="menu">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Menu</h2>
+          <p>A working selection — the kitchen changes a few plates with the season.</p>
+        </div>
+
+        <div class="menu-columns">
+
+          <div class="menu-group">
+            <h3><span class="menu-icon cold" aria-hidden="true"></span>Cold Mezze</h3>
+            <ul class="menu-list">
+              <li><span class="item-name">Hummus</span><span class="leader"></span><span class="item-price">$8</span></li>
+              <li><span class="item-desc">Chickpeas, tahini, lemon, olive oil</span></li>
+              <li><span class="item-name">Moutabal</span><span class="leader"></span><span class="item-price">$9</span></li>
+              <li><span class="item-desc">Smoked eggplant, tahini, pomegranate</span></li>
+              <li><span class="item-name">Tabbouleh</span><span class="leader"></span><span class="item-price">$9</span></li>
+              <li><span class="item-desc">Parsley, bulgur, tomato, lemon</span></li>
+              <li><span class="item-name">Labneh</span><span class="leader"></span><span class="item-price">$7</span></li>
+              <li><span class="item-desc">Strained yogurt, mint, olive oil</span></li>
+            </ul>
+          </div>
+
+          <div class="menu-group">
+            <h3><span class="menu-icon hot" aria-hidden="true"></span>Hot Mezze</h3>
+            <ul class="menu-list">
+              <li><span class="item-name">Kibbeh</span><span class="leader"></span><span class="item-price">$10</span></li>
+              <li><span class="item-desc">Bulgur shells, spiced lamb, pine nuts</span></li>
+              <li><span class="item-name">Warak Enab</span><span class="leader"></span><span class="item-price">$9</span></li>
+              <li><span class="item-desc">Stuffed grape leaves, rice, herbs</span></li>
+              <li><span class="item-name">Halloumi</span><span class="leader"></span><span class="item-price">$9</span></li>
+              <li><span class="item-desc">Grilled, drizzled with honey</span></li>
+              <li><span class="item-name">Batata Harra</span><span class="leader"></span><span class="item-price">$8</span></li>
+              <li><span class="item-desc">Spiced fried potatoes, garlic, coriander</span></li>
+            </ul>
+          </div>
+
+          <div class="menu-group">
+            <h3><span class="menu-icon grill" aria-hidden="true"></span>From the Grill</h3>
+            <ul class="menu-list">
+              <li><span class="item-name">Shish Taouk</span><span class="leader"></span><span class="item-price">$18</span></li>
+              <li><span class="item-desc">Marinated chicken skewers, garlic sauce</span></li>
+              <li><span class="item-name">Kafta</span><span class="leader"></span><span class="item-price">$19</span></li>
+              <li><span class="item-desc">Grilled spiced lamb and beef, onions</span></li>
+              <li><span class="item-name">Mixed Grill</span><span class="leader"></span><span class="item-price">$26</span></li>
+              <li><span class="item-desc">Chicken, lamb, and kafta, served with rice</span></li>
+            </ul>
+          </div>
+
+          <div class="menu-group">
+            <h3><span class="menu-icon dessert" aria-hidden="true"></span>Dessert</h3>
+            <ul class="menu-list">
+              <li><span class="item-name">Knafeh</span><span class="leader"></span><span class="item-price">$8</span></li>
+              <li><span class="item-desc">Sweet cheese, semolina crust, syrup</span></li>
+              <li><span class="item-name">Baklava</span><span class="leader"></span><span class="item-price">$6</span></li>
+              <li><span class="item-desc">Layered pastry, pistachio, honey</span></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= RESERVATIONS + VISIT ================= -->
+    <section class="visit" id="visit">
+      <div class="wrap visit-grid">
+
+        <form class="reserve-form" id="reserve" onsubmit="return false;">
+          <h2>Reserve a table</h2>
+          <p class="form-lede">Tables are held for 15 minutes past the reservation time.</p>
+          <div class="form-row">
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" required>
+            </label>
+            <label>
+              Phone or email
+              <input type="text" name="contact" placeholder="How we'll reach you" required>
+            </label>
+          </div>
+          <div class="form-row">
+            <label>
+              Date
+              <input type="date" name="date" required>
+            </label>
+            <label>
+              Time
+              <input type="time" name="time" required>
+            </label>
+            <label>
+              Party size
+              <input type="number" name="party" min="1" max="20" placeholder="2" required>
+            </label>
+          </div>
+          <label>
+            Notes
+            <textarea name="notes" rows="3" placeholder="Dietary notes, special occasion, anything we should know."></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary">Request reservation</button>
+        </form>
+
+        <div class="visit-info">
+          <div class="info-block">
+            <h3>Hours</h3>
+            <p>Tuesday – Sunday, 12:00 PM – 11:00 PM<br>Closed Mondays</p>
+          </div>
+          <div class="info-block">
+            <h3>Location</h3>
+            <p>42 Olive Grove Lane<br>Ground floor</p>
+          </div>
+          <div class="info-block">
+            <h3>Contact</h3>
+            <p>hello@zaytounmezze.example<br>(555) 042-1198</p>
+          </div>
+          <div class="info-block">
+            <h3>Private events</h3>
+            <p>The back room seats up to 20 for private dinners and catering — ask when you reserve.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <div class="pattern-divider"></div>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <span>Zaytoun</span>
+      <span class="footer-dim">Demo site built for portfolio purposes</span>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', isOpen);
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', false);
+      });
+    });
+  </script>
+
+</body>
+</html>
